@@ -1,4 +1,12 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+.footer-ic-social {
+  width: 40px;
+  height: 40px;
+  @include md {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.border-top-white {
+  border-top: 1px solid #fff;
 }

@@ -1,0 +1,24 @@
+.bg-primary {
+  background-color: #aa0601;
+}
+.bg-header {
+  background-image:url(../assets/images/home-header.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @mixin md  {
+    background: url(../assets/images/home-header-sm.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+.bg-pink {
+  background: #FBF2F2;
+}
+.bg-white {
+  background: #fff;
+}
+.bg-section-4 {
+  background: url(../assets/images/index-bg.png)
+}

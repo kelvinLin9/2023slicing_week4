@@ -1,0 +1,59 @@
+// navbar
+.navbar {
+  padding: 16px 0;
+  @include md {
+    padding-bottom: 0;
+  }
+}
+.navbar-wrap {
+  display: flex;
+  justify-content: space-between;
+  
+  @include md {
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+  }
+}
+.navbar-logo {
+  width: 80px;
+  @include md {
+    margin: 0 0 16px 16px;
+  }
+}
+.navbar-nav {
+  display: flex;
+  // 這個常會忘記
+  align-items: center;
+  @include md {
+    flex-wrap: wrap;
+  }
+}
+.navbar-item {
+  height: 100%;
+  @include md {
+    width: 50%;
+    margin-right: 0px;
+    border: 1px solid #ffffff;
+  }
+}
+.navbar-link {
+  height: 100%;
+  display: block;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 8px 32px;
+  
+  @include md {
+    font-size: 16px;
+    text-align: center;
+    padding: 12px 0;
+  }
+}
+.navbar-link:hover {
+  opacity: 0.7;
+}
+.navbar-item:last-child .navbar-link {
+  padding-right: 0;
+}
