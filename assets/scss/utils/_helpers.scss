@@ -4,6 +4,9 @@
 .h-100 {
   height: 100%;
 }
+.cursor-pointer {
+  cursor: pointer;
+}
 // margin
 @for $i from 0 through $max {
   .m-#{$i} {
@@ -361,7 +364,9 @@
 .text-secondary {
   color: $secondary
 }
-
+.fst-italic {
+  font-style: italic
+}
 .flex-column {
   flex-direction: column;
 }
