@@ -1,0 +1,28 @@
+.series-rectangle-1 {
+  width: 24px;
+  height: 24px;
+  background: #5F3E2D;
+  border-radius: 4px;
+}
+
+.series-rectangle-2 {
+  width: 24px;
+  height: 24px;
+  background: #B75929;
+  border-radius: 4px;
+}
+
+.product-tabs {
+  width: 33.333%;
+  border: 1px solid #DCDCDC;
+  @include md {
+    p {
+      font-size: 24px;
+    }
+  }
+  @include sm {
+    p {
+      font-size: 16px;
+    }
+  }
+}
