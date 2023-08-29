@@ -15,14 +15,46 @@
 .product-tabs {
   width: 33.333%;
   border: 1px solid #DCDCDC;
-  @include md {
-    p {
+  position: relative;
+  &:hover::before{
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: #aa0601;
+    bottom: 0;
+  }
+  @include lg {
+    a {
       font-size: 24px;
     }
   }
-  @include sm {
-    p {
+  @include md {
+    a {
       font-size: 16px;
+    }
+  }
+}
+
+.pagination {
+	a {
+		display: block;
+		padding: 12px 16px;
+		font-size: 18px;
+		color: #555555;
+		border: 1px solid #555555;
+		&:hover {
+			background-color: #f2f2f2;
+		}
+		&:active {
+			background-color: #000000;
+			color: #ffffff;
+		}
+	}
+  @include md {
+    a {
+      font-size: 16px;
+      padding: 10px 12px;
     }
   }
 }
